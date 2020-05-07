@@ -2,6 +2,7 @@ package com.stanlee.portfolioapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -18,4 +19,17 @@ class MainActivity : AppCompatActivity() {
             dialog.show()
         }
     }
+
+    fun openEmail(view: View) {}
+    fun openGithub(view: View) {}
+    fun openTwitter(view: View) {}
+    fun openWhatsapp(view: View) {}
+    fun openFacebook(view: View) {}
+    fun openInstagram(view: View) {}
+    fun openLinkedIn(view: View) {}
+    fun openSkype(view: View) {}
+    fun openPlaystore(view: View) {}
+    fun openAndroid(view: View) {}
+    fun openChrome(view: View) {}
+    fun openYoutube(view: View) {}
 }
