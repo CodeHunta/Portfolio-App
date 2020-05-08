@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -28,7 +29,8 @@
                 android:layout_height="0dp"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
-                android:src="@drawable/email" />
+                android:src="@drawable/email"
+                tools:ignore="NestedWeights" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -55,7 +57,8 @@
                 android:layout_height="0dp"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
-                android:src="@drawable/github" />
+                android:src="@drawable/github"
+                tools:ignore="NestedWeights" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -81,7 +84,8 @@
                 android:layout_height="0dp"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
-                android:src="@drawable/twitter" />
+                android:src="@drawable/twitter"
+                tools:ignore="NestedWeights" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -99,7 +103,8 @@
         android:layout_height="70dp"
         android:layout_margin="2dp"
         android:orientation="horizontal"
-        android:padding="4dp">
+        android:padding="4dp"
+        android:baselineAligned="false">
 
         <!--Group 2 Icon 1-->
         <LinearLayout
@@ -116,7 +121,8 @@
                 android:layout_height="0dp"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
-                android:src="@drawable/whatsapp" />
+                android:src="@drawable/whatsapp"
+                tools:ignore="NestedWeights" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -142,7 +148,8 @@
                 android:layout_height="0dp"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
-                android:src="@drawable/facebook" />
+                android:src="@drawable/facebook"
+                tools:ignore="NestedWeights" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -168,7 +175,8 @@
                 android:layout_height="0dp"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
-                android:src="@drawable/instagram" />
+                android:src="@drawable/instagram"
+                tools:ignore="NestedWeights" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -203,7 +211,8 @@
                 android:layout_height="0dp"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
-                android:src="@drawable/linkedin" />
+                android:src="@drawable/linkedin"
+                tools:ignore="NestedWeights" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -229,7 +238,8 @@
                 android:layout_height="0dp"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
-                android:src="@drawable/skype" />
+                android:src="@drawable/skype"
+                tools:ignore="NestedWeights" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -255,7 +265,8 @@
                 android:layout_height="0dp"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
-                android:src="@drawable/playstore" />
+                android:src="@drawable/playstore"
+                tools:ignore="NestedWeights" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -275,7 +286,8 @@
         android:layout_margin="2dp"
         android:layout_marginBottom="10dp"
         android:orientation="horizontal"
-        android:padding="4dp">
+        android:padding="4dp"
+        android:baselineAligned="false">
         <!--Group 3 Icon 1-->
         <LinearLayout
             android:layout_width="0dp"
@@ -291,7 +303,8 @@
                 android:layout_height="0dp"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
-                android:src="@drawable/android" />
+                android:src="@drawable/android"
+                tools:ignore="NestedWeights" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -317,7 +330,8 @@
                 android:layout_height="0dp"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
-                android:src="@drawable/chrome" />
+                android:src="@drawable/chrome"
+                tools:ignore="NestedWeights" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -343,7 +357,8 @@
                 android:layout_height="0dp"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
-                android:src="@drawable/youtube" />
+                android:src="@drawable/youtube"
+                tools:ignore="NestedWeights" />
 
             <TextView
                 android:layout_width="wrap_content"
