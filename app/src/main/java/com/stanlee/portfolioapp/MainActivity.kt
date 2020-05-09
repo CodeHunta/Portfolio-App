@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     fun openEmail(view: View) {
         val emailIntent =
             Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "stanleyumez@outlook.com", null))
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Hello Stanley Umezuruike")
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Hello Stanley")
         startActivity(emailIntent)
     }
 
@@ -44,7 +44,8 @@ class MainActivity : AppCompatActivity() {
     fun openWhatsapp(view: View) {
         val whatsappIntent = Intent(
             Intent.ACTION_VIEW,
-            Uri.parse("https://api.whatsapp.com/send?phone=+2348032324739"))
+            Uri.parse("https://api.whatsapp.com/send?phone=+2348032324739")
+        )
         startActivity(whatsappIntent)
     }
 
@@ -61,7 +62,8 @@ class MainActivity : AppCompatActivity() {
     fun openLinkedIn(view: View) {
         val linkedinIntent = Intent(
             Intent.ACTION_VIEW,
-            Uri.parse("https://www.linkedin.com/in/stanley-umezuruike-1417a884"))
+            Uri.parse("https://www.linkedin.com/in/stanley-umezuruike-1417a884")
+        )
         startActivity(linkedinIntent)
     }
 
@@ -90,7 +92,8 @@ class MainActivity : AppCompatActivity() {
     fun openYoutube(view: View) {
         val ytIntent = Intent(
             Intent.ACTION_VIEW,
-            Uri.parse("https://www.youtube.com/channel/UCr37EHkT42aJNX9hAzYArdw"))
+            Uri.parse("https://www.youtube.com/channel/UCr37EHkT42aJNX9hAzYArdw")
+        )
         startActivity(ytIntent)
     }
 

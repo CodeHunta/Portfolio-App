@@ -5,18 +5,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingTop="15dp"
-    android:paddingBottom="15dp">
+    android:paddingBottom="15dp"
+    tools:ignore="ContentDescription">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_margin="2dp"
-        android:orientation="horizontal"
+        android:baselineAligned="false"
         android:clickable="true"
         android:focusable="true"
         android:onClick="openEmail"
-        android:padding="4dp"
-        android:baselineAligned="false">
+        android:orientation="horizontal"
+        android:padding="4dp">
         <!--Group 1 Icon 1-->
         <LinearLayout
             android:layout_width="0dp"
@@ -27,6 +28,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
+                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:src="@drawable/email"
@@ -35,7 +37,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_gravity="center"
                 android:text="@string/email"
                 android:textColor="@android:color/black"
                 android:textSize="@dimen/txt_dimen"
@@ -55,6 +57,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
+                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:src="@drawable/github"
@@ -82,6 +85,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
+                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:src="@drawable/twitter"
@@ -102,9 +106,9 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_margin="2dp"
+        android:baselineAligned="false"
         android:orientation="horizontal"
-        android:padding="4dp"
-        android:baselineAligned="false">
+        android:padding="4dp">
 
         <!--Group 2 Icon 1-->
         <LinearLayout
@@ -119,6 +123,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
+                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:src="@drawable/whatsapp"
@@ -146,6 +151,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
+                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:src="@drawable/facebook"
@@ -173,6 +179,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
+                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:src="@drawable/instagram"
@@ -209,6 +216,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
+                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:src="@drawable/linkedin"
@@ -236,6 +244,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
+                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:src="@drawable/skype"
@@ -263,6 +272,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
+                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:src="@drawable/playstore"
@@ -285,9 +295,9 @@
         android:layout_height="70dp"
         android:layout_margin="2dp"
         android:layout_marginBottom="10dp"
+        android:baselineAligned="false"
         android:orientation="horizontal"
-        android:padding="4dp"
-        android:baselineAligned="false">
+        android:padding="4dp">
         <!--Group 3 Icon 1-->
         <LinearLayout
             android:layout_width="0dp"
@@ -301,6 +311,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
+                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:src="@drawable/android"
@@ -328,6 +339,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
+                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:src="@drawable/chrome"
@@ -355,6 +367,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
+                android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
                 android:src="@drawable/youtube"

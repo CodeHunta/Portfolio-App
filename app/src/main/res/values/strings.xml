@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Portfolio App</string>
+    <string name="app_name">CodeHunta</string>
     <string name="get_social">Let\'s Get Social!</string>
-    <string name="mini_bio">I am an aspiring Software Engineer, a Start.NG mentee and a future billionaire. I speak multiple languages which include English, Igbo, Hausa, Yoruba, Spanish, Kotlin and a little bit of Python. I like to make new friends so hit me up on my social handles below.</string>
+    <string name="mini_bio">I am a budding Software Engineer, a Start.NG mentee and a future billionaire. \n\nI speak multiple languages which include English, Igbo, Hausa, Yoruba, Spanish, Kotlin and a little bit of Python. \n\nI like to make magic and new friends, so hit me up on my social media handles below.</string>
     <string name="email">Email</string>
     <string name="github">GitHub</string>
     <string name="twitter">Twitter</string>
