@@ -7,8 +7,10 @@ import android.os.Bundle
 import android.os.PersistableBundle
 import android.util.Log
 import android.view.View
+import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -36,8 +38,8 @@ class MainActivity : AppCompatActivity() {
     private fun saveToSharedPref(){
         val sharedPref = getSharedPreferences(USER_SHARED_PREF, Context.MODE_PRIVATE)
         val editor = sharedPref.edit()
-        editor.putString(EMAIL, binding.edit_email.text.toString())
-        editor.putString(PASSWORD, binding.edit_pwd.text.toString())
+        editor.putString(EMAIL, findViewById<EditText>(R.id.edit_email).text.toString())
+        editor.putString(PASSWORD, findViewById<EditText>(R.id.btn_signup).text.toString())
         editor.apply()
     }
 
