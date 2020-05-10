@@ -1,8 +1,10 @@
 package com.stanlee.portfolioapp
 
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -10,6 +12,14 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    private val tag = "MainActivity"
+
+    companion object{
+        const val USER_SHARED_PREF = "com.stanlee.portfolioapp.PREFERENCES"
+        const val EMAIL = "EMAIL"
+        const val PASSWORD = "PASSWORD"
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +31,20 @@ class MainActivity : AppCompatActivity() {
             dialog.setContentView(view)
             dialog.show()
         }
+    }
+
+    private fun saveToSharedPref(){
+        val sharedPref = getSharedPreferences(USER_SHARED_PREF, Context.MODE_PRIVATE)
+        val editor = sharedPref.edit()
+        editor.putString(EMAIL, binding.edit_email.text.toString())
+        editor.putString(PASSWORD, binding.edit_pwd.text.toString())
+        editor.apply()
+    }
+
+    fun openLogIn(view: View) {
+        saveToSharedPref()
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
     }
 
     fun openEmail(view: View) {
@@ -99,26 +123,26 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        Log.v("MainActivity", "App status : onStart")
+        Log.v(tag, "App status : onStart state")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.v("MainActivity", "App status : onResume")
+        Log.v(tag, "App status : onResume state")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.v("MainActivity", "App status : onPause")
+        Log.v(tag, "App status : onPause state")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.v("MainActivity", "App status : onStop")
+        Log.v(tag, "App status : onStop state")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.v("MainActivity", "App status : onDestroy")
+        Log.v(tag, "App status : onDestroy state")
     }
 }
