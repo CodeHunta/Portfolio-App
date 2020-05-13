@@ -17,12 +17,6 @@ class MainActivity : AppCompatActivity() {
 
     private val tag = "MainActivity"
 
-    companion object{
-        const val USER_SHARED_PREF = "com.stanlee.portfolioapp.PREFERENCES"
-        const val EMAIL = "EMAIL"
-        const val PASSWORD = "PASSWORD"
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -33,20 +27,6 @@ class MainActivity : AppCompatActivity() {
             dialog.setContentView(view)
             dialog.show()
         }
-    }
-
-    private fun saveToSharedPref(){
-        val sharedPref = getSharedPreferences(USER_SHARED_PREF, Context.MODE_PRIVATE)
-        val editor = sharedPref.edit()
-        editor.putString(EMAIL, findViewById<EditText>(R.id.edit_email).text.toString())
-        editor.putString(PASSWORD, findViewById<EditText>(R.id.btn_signup).text.toString())
-        editor.apply()
-    }
-
-    fun openLogIn(view: View) {
-        saveToSharedPref()
-        val intent = Intent(this, LoginActivity::class.java)
-        startActivity(intent)
     }
 
     fun openEmail(view: View) {

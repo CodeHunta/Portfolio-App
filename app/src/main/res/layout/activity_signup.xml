@@ -1,6 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/cobaltBlue">
+
+
+    <EditText
+        android:id="@+id/edit_full_name"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="300dp"
+        android:ems="18"
+        android:background="@drawable/btn_round"
+        android:backgroundTint="@color/lightGrey"
+        android:gravity="center"
+        android:hint="@string/full_name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:ems="18"
+        android:background="@drawable/btn_round"
+        android:backgroundTint="@color/lightGrey"
+        android:gravity="center"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/edit_full_name"
+        app:layout_constraintStart_toStartOf="@+id/edit_full_name"
+        app:layout_constraintTop_toBottomOf="@+id/edit_full_name" />
+
+    <EditText
+        android:id="@+id/edit_pwd"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_round"
+        android:backgroundTint="@color/lightGrey"
+        android:ems="18"
+        android:gravity="center"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/edit_email"
+        app:layout_constraintStart_toStartOf="@+id/edit_email"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email" />
+
+    <Button
+        android:id="@+id/btn_log_signup"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/btn_round"
+        android:backgroundTint="@color/greyOrange"
+        android:fadingEdge="horizontal"
+        android:gravity="center"
+        android:onClick="openLogIn"
+        android:shadowRadius="5"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/cobaltBlue"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sign_signup" />
+
+    <Button
+        android:id="@+id/btn_sign_signup"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_round"
+        android:backgroundTint="@color/darkOrange"
+        android:gravity="center"
+        android:shadowRadius="5"
+        android:text="@string/create_account"
+        android:onClick="openLogIn"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/edit_pwd"
+        app:layout_constraintEnd_toEndOf="@+id/edit_pwd"
+        app:layout_constraintStart_toStartOf="@+id/edit_pwd"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="412dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,5 +16,10 @@
     <string name="youtube">Youtube</string>
     <string name="stanley_umezuruike">Stanley Umezuruike</string>
     <string name="android_mobile_developer">Android Mobile Developer</string>
-    <string name="sign_up">SIGN UP!</string>
+    <string name="sign_up">Sign Up!</string>
+    <string name="login">Login</string>
+    <string name="full_name">Full Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create Account</string>
 </resources>

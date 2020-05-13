@@ -2,7 +2,8 @@
 <resources>
     <color name="colorPrimary">#7E42FF</color>
     <color name="colorPrimaryDark">#140040</color>
-    <color name="btColour">#262D60</color>
-    <color name="editColour">#cccccc</color>
-    <color name="orColour">#FF8300</color>
+    <color name="cobaltBlue">#262D60</color>
+    <color name="lightGrey">#cccccc</color>
+    <color name="darkOrange">#FF8300</color>
+    <color name="greyOrange">#FFC660</color>
 </resources>
