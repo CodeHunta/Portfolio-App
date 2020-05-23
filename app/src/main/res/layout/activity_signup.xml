@@ -22,7 +22,8 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/edit_email"
@@ -37,7 +38,8 @@
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="@+id/edit_full_name"
         app:layout_constraintStart_toStartOf="@+id/edit_full_name"
-        app:layout_constraintTop_toBottomOf="@+id/edit_full_name" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_full_name"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/edit_pwd"
@@ -52,7 +54,8 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="@+id/edit_email"
         app:layout_constraintStart_toStartOf="@+id/edit_email"
-        app:layout_constraintTop_toBottomOf="@+id/edit_email" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_email"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/btn_log_signup"

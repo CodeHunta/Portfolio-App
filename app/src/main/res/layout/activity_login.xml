@@ -8,7 +8,7 @@
     android:background="@color/cobaltBlue">
 
     <EditText
-        android:id="@+id/edit_email"
+        android:id="@+id/edit_email_login"
         android:layout_width="350dp"
         android:layout_height="35dp"
         android:layout_marginTop="300dp"
@@ -16,14 +16,15 @@
         android:backgroundTint="@color/lightGrey"
         android:ems="18"
         android:gravity="center"
-        android:hint="Email Address"
+        android:hint="@string/email_address"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
 
     <EditText
-        android:id="@+id/edit_pwd"
+        android:id="@+id/edit_pwd_login"
         android:layout_width="350dp"
         android:layout_height="35dp"
         android:layout_marginTop="16dp"
@@ -31,11 +32,12 @@
         android:backgroundTint="@color/lightGrey"
         android:ems="18"
         android:gravity="center"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="@+id/edit_email"
-        app:layout_constraintStart_toStartOf="@+id/edit_email"
-        app:layout_constraintTop_toBottomOf="@+id/edit_email" />
+        app:layout_constraintEnd_toEndOf="@+id/edit_email_login"
+        app:layout_constraintStart_toStartOf="@+id/edit_email_login"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email_login"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/btn_sign_login"
@@ -71,9 +73,9 @@
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/edit_pwd"
-        app:layout_constraintStart_toStartOf="@+id/edit_pwd"
-        app:layout_constraintTop_toBottomOf="@+id/edit_pwd"
+        app:layout_constraintEnd_toEndOf="@+id/edit_pwd_login"
+        app:layout_constraintStart_toStartOf="@+id/edit_pwd_login"
+        app:layout_constraintTop_toBottomOf="@+id/edit_pwd_login"
         tools:layout_editor_absoluteX="166dp"
         tools:layout_editor_absoluteY="412dp" />
 
